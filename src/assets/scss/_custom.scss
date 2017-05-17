@@ -12,7 +12,7 @@ h1, h2, h3, h4 { font-weight: 600  }
 
 	h4 { color: $white; margin-bottom: 0 }
 
-	h4 a { color: #2c3840 }
+	h4 a { /* color: #2c3840 */ }
 
 	.almost-hidden { opacity: .01 }
 }
@@ -45,7 +45,7 @@ h1, h2, h3, h4 { font-weight: 600  }
 
 		small { white-space: nowrap; }
 
-		h4 { color: $brand-orange }
+		// h4 { color: $brand-orange }
 
 	}
 
@@ -59,8 +59,6 @@ h1, h2, h3, h4 { font-weight: 600  }
 }
 
 .other-cities-list {
-	background-color: lighten($brand-orange, 5% );
-	color: white;
 
 	.featured-image-block .featured-image-block-title { text-transform: none; color: white }
 } 
@@ -72,7 +70,7 @@ h1, h2, h3, h4 { font-weight: 600  }
 	.menu { flex-wrap: wrap; 
 
 		a { 
-			color: $blue-grey
+			// color: $blue-grey
 		}
 	}
 
@@ -137,11 +135,13 @@ h5.address {
 .neighbourhoods-list,
 .profile-services-list {
 
-	.card-divider {
-	   background: $dark-aqua ; // #009fb2
 
-	   	h4, h3, h2 { color: darken( $dark-aqua, 25%) }
-	   i { color: darken( $dark-aqua, 15%); /* #4ec6cd; */  }
+
+	.card-divider {
+	   background: lighten( $brandGrey, 75%) ; // extra-grey colour
+
+	   	h4, h3, h2 { color: lighten( $brandGrey,50% ) }
+	   i { color: lighten( $brandGrey,50% ); /* #4ec6cd; */  }
 	}
 
 	.menu,

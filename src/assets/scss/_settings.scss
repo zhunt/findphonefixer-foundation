@@ -51,10 +51,190 @@
 $brown: #b24c00;
 $orange-bright: #ff7c19;
 $brand-orange: #ff6d00;
-$dark-aqua: #009fb2;
+$dark-aqua: #1a334f;  // black (2c343d) at 35% saturation
 $light-aqua: #a2f5ff;
 
+$brandGrey: #2c343d;
+
+//$bluegrey50: #a8b3c0;
+
 $primary: #fcce13; // yellow-ish colour used on logo
+
+/*
+Lighten logo black (#2c343d) - 16 steps from
+
+0%
+#2c343d
+
+5%
+#37414c
+
+10%
+#414d5b
+
+15%
+#4c5a69
+
+20%
+#576678
+
+25%
+#617387
+
+30%
+#6d8095
+
+35%
+#7b8da0
+
+40%
+#8a9aab
+
+45%
+#99a6b5
+
+50%
+#a8b3c0
+
+55%
+#b7c0cb
+
+60%
+#c5cdd5
+
+65%
+#d4dae0
+
+70%
+#e3e7eb
+
+75%
+#f2f4f6
+
+--------------
+Saturate logo black
+
+
+0%
+#2c343d
+
+5%
+#293440
+
+10%
+#273442
+
+15%
+#243445
+
+20%
+#213347
+
+25%
+#1f334a
+
+30%
+#1c334d
+
+35%
+#1a334f
+
+40%
+#173352
+
+45%
+#143355
+
+50%
+#123257
+
+55%
+#0f325a
+
+60%
+#0c325c
+
+65%
+#0a325f
+
+70%
+#073262
+
+75%
+#053264
+
+80%
+#023267
+
+----------------------------------
+Lighten primary colour (#fcce13)
+
+#fcce13
+
+5%
+#fcd32c
+
+10%
+#fdd845
+
+15%
+#fdde5f
+
+20%
+#fde378
+
+25%
+#fee891
+
+30%
+#feedaa
+
+35%
+#fef3c3
+
+40%
+#fff8dc
+
+45%
+#fffdf6
+
+-------------------
+Darken primary colour
+
+0%
+#fcce13
+
+5%
+#f2c303
+
+10%
+#d9af03
+
+15%
+#c09b02
+
+20%
+#a78602
+
+25%
+#8e7202
+
+30%
+#745e01
+
+35%
+#5b4a01
+
+40%
+#423501
+
+45%
+#292101
+
+50%
+#100d00
+
+*/
 
 
 // --- 
@@ -64,16 +244,16 @@ $global-width: rem-calc(1200);
 $global-lineheight: 1.5;
 $foundation-palette: (
   primary: #fcce13,
-  secondary: $dark-aqua, // was: #767676
+  secondary: #7b8da0, // was: #767676
   success: #3adb76,
   warning: #ffae00,
   alert: #cc4b37,
 );
-$light-gray: #e6e6e6;
-$extra-light-grey: #f3f3f3;
-$medium-gray: #cacaca;
+$light-gray: #e3e7eb;
+$extra-light-grey: #f2f4f6;
+$medium-gray: #8a9aab;
 $dark-gray: #8a8a8a;
-$blue-grey: #41525e;
+$blue-grey: #414d5b;
 $black: #2c343d; // blue-ish black used on logo
 $white: #ffffff;
 $body-background: $white;
