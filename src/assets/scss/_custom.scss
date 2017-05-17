@@ -1,0 +1,161 @@
+/* _custom.scss */
+
+body { background-color: $extra-light-grey; 
+
+}
+
+h1, h2, h3, h4 { font-weight: 600  }
+
+
+.header {
+	background-color: $black;
+
+	h4 { color: $white; margin-bottom: 0 }
+
+	h4 a { color: #2c3840 }
+
+	.almost-hidden { opacity: .01 }
+}
+
+
+.hero {
+	background-image: url('/assets/img/hero-bg-1.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 1rem 0;
+	.logo {
+		border-radius: 1rem;
+		margin-bottom: 1rem;
+		height: 15rem;
+	}
+
+	.search-form {
+	margin: 1rem auto;
+
+	}
+}
+
+
+.featured {
+
+	.card { 
+		background-color: $white; 
+
+		// box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+
+		small { white-space: nowrap; }
+
+		h4 { color: $brand-orange }
+
+	}
+
+	p { font-size: 1rem }
+
+	.card-divider { background-color: $white; }
+
+	.card-image { //border-radius: 3px
+	}
+	
+}
+
+.other-cities-list {
+	background-color: lighten($brand-orange, 5% );
+	color: white;
+
+	.featured-image-block .featured-image-block-title { text-transform: none; color: white }
+} 
+
+
+/* **** Cities page **** */
+.neighbourhoods-list {
+
+	.menu { flex-wrap: wrap; 
+
+		a { 
+			color: $blue-grey
+		}
+	}
+
+	.extra-light {
+    	border: $extra-light-grey;
+    	border-bottom: $extra-light-grey
+    }
+
+	.menu.expanded > li {
+	    
+	    flex-shrink: 0;
+	    flex-grow: 0;
+	  
+	    flex-basis: 14rem;
+
+	    &:hover {
+	    	background-color: $light-gray
+	    }
+
+	}
+
+} 
+
+/* *** Profile page *** */
+
+.venue-hours {
+	tr > td:first-child {
+		font-weight: bold;
+	}
+}
+
+
+.location-path {
+	.card {
+		margin-top: 1rem;
+	}
+
+	.breadcrumbs {
+		margin: 0; 
+		padding: 0;
+	}	
+}
+
+.venue-contact small { color: $blue-grey }
+
+#profile-map {
+	display: block;
+	width: 100%;
+	height: 20rem;
+}
+
+
+/* try to line up both title and address - needs work */
+h5.address {
+	@include breakpoint(medium) {
+		padding-top: 1.5rem;
+	}
+}
+
+
+.venue-hours,
+.neighbourhoods-list,
+.profile-services-list {
+
+	.card-divider {
+	   background: $dark-aqua ; // #009fb2
+
+	   	h4, h3, h2 { color: darken( $dark-aqua, 25%) }
+	   i { color: darken( $dark-aqua, 15%); /* #4ec6cd; */  }
+	}
+
+	.menu,
+	.no-bullet { 
+		flex-wrap: wrap; 
+		a { color: $blue-grey; font-weight: 600; }
+	}
+}
+
+
+/* *** Site-wide *** */
+footer .menu { flex-wrap: wrap;  } /* fix for marketing-site-footer */
+
+
+
+
+
