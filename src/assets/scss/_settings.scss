@@ -54,13 +54,16 @@ $brand-orange: #ff6d00;
 $dark-aqua: #009fb2;
 $light-aqua: #a2f5ff;
 
+$primary: #fcce13; // yellow-ish colour used on logo
+
+
 // --- 
 
 $global-font-size: 100%;
 $global-width: rem-calc(1200);
 $global-lineheight: 1.5;
 $foundation-palette: (
-  primary: $brand-orange, 
+  primary: #fcce13,
   secondary: $dark-aqua, // was: #767676
   success: #3adb76,
   warning: #ffae00,
@@ -71,7 +74,7 @@ $extra-light-grey: #f3f3f3;
 $medium-gray: #cacaca;
 $dark-gray: #8a8a8a;
 $blue-grey: #41525e;
-$black: #0a0a0a;
+$black: #2c343d; // blue-ish black used on logo
 $white: #ffffff;
 $body-background: $white;
 $body-font-color: $black;
