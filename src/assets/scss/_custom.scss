@@ -4,15 +4,30 @@ body { background-color: $extra-light-grey;
 
 }
 
-h1, h2, h3, h4 { font-weight: 600  }
+h1, h2, h3, h4, h5 { font-weight: 600  }
+
+.breadcrumbs a,
+a {
+	color: #1a334f;
+	//font-weight: bold;
+	&:hover {
+		color: #2c343d;
+	}
+}
 
 
 .header {
 	background-color: $black;
 
-	h4 { color: $white; margin-bottom: 0 }
+	h4 { color: $white; margin-bottom: 0;
 
-	h4 a { /* color: #2c3840 */ }
+		img {
+			width: 50px; height: 50px;
+			padding: 5px 5px 5px 0;
+		}
+	}
+
+	h4 a { color: $primary }
 
 	.almost-hidden { opacity: .01 }
 }
@@ -60,7 +75,19 @@ h1, h2, h3, h4 { font-weight: 600  }
 
 .other-cities-list {
 
-	.featured-image-block .featured-image-block-title { text-transform: none; color: white }
+	.featured-image-block-grid-header {
+		h4 {
+			text-transform: capitalize;
+		}
+
+	}
+
+	.featured-image-block {
+
+		.featured-image-block-title {
+
+		}
+	}
 } 
 
 
@@ -124,18 +151,18 @@ h1, h2, h3, h4 { font-weight: 600  }
 
 
 /* try to line up both title and address - needs work */
+/*
 h5.address {
 	@include breakpoint(medium) {
 		padding-top: 1.5rem;
 	}
 }
+*/
 
 
 .venue-hours,
 .neighbourhoods-list,
 .profile-services-list {
-
-
 
 	.card-divider {
 	   background: lighten( $brandGrey, 75%) ; // extra-grey colour
