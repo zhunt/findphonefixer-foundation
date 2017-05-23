@@ -1,17 +1,17 @@
 /* _custom.scss */
 
-body { background-color: $extra-light-grey; 
-
+body {
+	background-color: $extra-light-grey;
 }
 
 h1, h2, h3, h4, h5 { font-weight: 600  }
 
 .breadcrumbs a,
 a {
-	color: #1a334f;
+	//color: #1a334f;
 	//font-weight: bold;
 	&:hover {
-		color: #2c343d;
+		// color: #2c343d;
 	}
 }
 
@@ -19,7 +19,10 @@ a {
 .header {
 	background-color: $black;
 
-	h4 { color: $white; margin-bottom: 0;
+
+	h4 {
+		color: $white;
+		margin-bottom: 0;
 
 		img {
 			width: 50px; height: 50px;
@@ -27,7 +30,7 @@ a {
 		}
 	}
 
-	h4 a { color: $primary }
+	h4 a { color: $bandYellow; }
 
 	.almost-hidden { opacity: .01 }
 }
@@ -45,8 +48,15 @@ a {
 	}
 
 	.search-form {
-	margin: 1rem auto;
+		margin: 1rem auto;
+	}
 
+	.button {
+		background-color: $bandYellow;
+
+		&:hover {
+			background-color: darken( $bandYellow, 5%) ;
+		}
 	}
 
 }
@@ -148,7 +158,9 @@ a {
 	}	
 }
 
-.venue-contact small { color: $blue-grey }
+.venue-contact small {
+	// color: $blue-grey
+}
 
 #profile-map {
 	display: block;
@@ -171,25 +183,34 @@ h5.address {
 .neighbourhoods-list,
 .profile-services-list {
 
-	.card-divider {
-	   background: lighten( $brandGrey, 75%) ; // extra-grey colour
+	.card-section.text-left {
+		padding-top: 0;
+	}
 
-	   	h4, h3, h2 { color: lighten( $brandGrey,50% ) }
-	   i { color: lighten( $brandGrey,50% ); /* #4ec6cd; */  }
+	.card-divider {
+
+		background-color: $white;
+
+	   //	background: lighten( $brandGrey, 75%) ; // extra-grey colour
+
+	   	h4, h3, h2 {
+			// color: lighten( $brandGrey,50% )
+		}
+	   i {
+		   // color: lighten( $brandGrey,50% ); /* #4ec6cd; */
+	   }
 	}
 
 	.menu,
 	.no-bullet { 
 		flex-wrap: wrap; 
-		a { color: $blue-grey; font-weight: 600; }
+		a {
+			// color: $blue-grey;
+			font-weight: 600;
+		}
 	}
 }
 
 
 /* *** Site-wide *** */
 footer .menu { flex-wrap: wrap;  } /* fix for marketing-site-footer */
-
-
-
-
-

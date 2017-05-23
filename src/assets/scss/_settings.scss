@@ -48,17 +48,15 @@
 
 
 // --
-$brown: #b24c00;
-$orange-bright: #ff7c19;
-$brand-orange: #ff6d00;
-$dark-aqua: #1a334f;  // black (2c343d) at 35% saturation
-$light-aqua: #a2f5ff;
 
 $brandGrey: #2c343d;
+$bandYellow: #fcce13;
 
 //$bluegrey50: #a8b3c0;
 
-$primary: #fcce13; // yellow-ish colour used on logo
+$primary: $brandGrey; // yellow-ish colour used on logo
+$secondary: $bandYellow;
+
 
 /*
 Lighten logo black (#2c343d) - 16 steps from
@@ -243,8 +241,8 @@ $global-font-size: 100%;
 $global-width: rem-calc(1200);
 $global-lineheight: 1.5;
 $foundation-palette: (
-  primary: #fcce13,
-  secondary: #7b8da0, // was: #767676
+  primary: $primary,
+  secondary: $secondary, // was: #767676
   success: #3adb76,
   warning: #ffae00,
   alert: #cc4b37,
