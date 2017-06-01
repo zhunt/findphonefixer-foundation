@@ -230,6 +230,19 @@ h5.address {
 	.card-section { font-weight: bold }
 }
 
+.search-result-block {
+	background-color: $white;
+}
 
 /* *** Site-wide *** */
 footer .menu { flex-wrap: wrap;  } /* fix for marketing-site-footer */
+
+/*
+* Card styles
+*/
+
+.search-results {
+	.card {
+		flex-direction: row;
+	}
+}
