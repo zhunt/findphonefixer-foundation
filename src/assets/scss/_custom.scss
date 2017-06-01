@@ -211,6 +211,25 @@ h5.address {
 	}
 }
 
+/*
+* Styles for store card images
+*/
+.store-card {
+	h4 {
+		line-height: 1.1;
+
+		small {
+			color: lighten( $brandGrey,50% );
+		}
+	}
+	.card-image {
+		// border-top: 1px solid lighten( $brandGrey,70% );
+		// border-bottom: 1px solid lighten( $brandGrey,70% );
+
+	}
+	.card-section { font-weight: bold }
+}
+
 
 /* *** Site-wide *** */
 footer .menu { flex-wrap: wrap;  } /* fix for marketing-site-footer */
