@@ -246,14 +246,23 @@ footer .menu { flex-wrap: wrap;  } /* fix for marketing-site-footer */
 	}
 }
 
+.venue-title {
+	p {
+		line-height: 1;
+		margin-top: 0;
+	}
 
-.venue-title h1 {
-	line-height: 1;
+	h1 {
+		//line-height: 1;
+	}
+
 }
 
-.venu-description {
+
+.venue-description,
+.search-results {
 	.label {
-		background-color: lighten($bandYellow, 30%);
+		background-color: lighten($bandYellow, 30%); // use for other buttons?
 		color: $brandGrey;
 	}
 }
