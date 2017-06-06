@@ -31,12 +31,13 @@
 			<p><b>Downtown Toronto | Phone Repairs</b></p>
 		</div>
 </div>
+</div>
 
 <div class="row la/rge-unstack ">
 
 
 	<div class="columns small-12 medium-4 flex-container ">
-		<div class="card">
+		<div class="card profile-picture">
 			<img src="/assets/img/placeholder-555.png">
 			<div class="card-section text-center">
 
@@ -47,7 +48,14 @@
 
 				<p><b>www.iFixSite.com</b></p>
 
-				<p><a href="#" title="show other contact">more...</a></p>
+				<button type="button" style="cursor: pointer" data-toggle="example-dropdown"><p>More...</p></button>
+				<div class="dropdown-pane" id="example-dropdown" data-dropdown data-auto-focus="true">
+					<p><b>Facebook</b></p>
+					<p><b>Twitter</b></p>
+					<p><b>Toll-Free</b></p>
+				</div>
+
+
 			</div>
 		</div>
 	</div>
@@ -88,7 +96,7 @@
 						<i>Last updated: June 2016</i>
 					</div>
 					<div class="column text-right shrink">
-						<a href="#">Report Error</a>
+						<a href="#" data-open="reportErrorModal">Report Error</a>
 					</div>
 				</div>
 
@@ -99,7 +107,7 @@
 	</div>
 
 	<div class="columns small-12 medium-8">
-		<div class="card">
+		<div class="card profile-map">
 			<script>
                 var geoCord = [ 43.653679, -79.380112 ];
 			</script>
@@ -121,7 +129,7 @@
 			<div class="row large-unstack medium-unstack card-section text-center">
 				<div class="column"><p><b>Mon</b><br>9:30am - 7:00pm </p></div>
 				<div class="column"><p><b>Tue</b><br>10:30am - 8:00pm </p></div>
-				<div class="column"><p class="selected"><b>Wed</b><br>10:30am - 8:00pm </p></div>
+				<div class="column"><p class="selected"><b>Wed</b><br>10:30am - 8:00pm</p></div>
 				<div class="column"><p><b>Thu</b><br>10:30am - 8:00pm </p></div>
 				<div class="column"><p><b>Fri</b><br>9:30am - 7:00pm </p></div>
 				<div class="column"><p><b>Sat</b><br>9:30am - 7:00pm </p></div>
@@ -169,192 +177,94 @@
 		</div>
 	</div>
 
-
-
-
-
-
 </div>
+
+
 
 <hr>
 
-<!--
-<section class="venue-name">
-	<div class="row medium-unstack align-middle">
-		<div class="columns large-expand medium-expand">
-			<h1>iFixIt Repairs <small>Eaton Centre</small></h1>
+<div class="reveal" id="reportErrorModal" data-reveal>
 
-			<h5>220 Yonge St, Toronto, ON M5B 2H1, 4th floor</h5>
-		</div>
+	<button class="close-button" data-close aria-label="Close modal" type="button">
+		<span aria-hidden="true">&times;</span>
+	</button>
 
+	<h3>Report Error</h3>
+
+<form data-abide novalidate>
+	<div data-abide-error class="alert callout" style="display: none;">
+		<p><i class="fi-alert"></i> There are some errors in your form.</p>
 	</div>
-</section>
 
-<section class="map-gallery">
-	<div class="row columns">
-		
-		<div id="profile-map">MAP</div>
-
-		<script>
-			var geoCord = [ 43.653679, -79.380112 ]; 
-		</script>
-
-	</div>	
-</section>
-
-<section class="description">
-	<div class="row column">
-	<div class="callout">
-		<h3>About iFixIt Repairs:</h3>
-		<p>iFixIt iPhone Repairs is a coworking / shared office space spot at 298 Dundas St. W, Level 3 on the corner on McCaul St., just west of University Ave. in Toronto's Chinatown / Queen Street West neighbourhoods.</p>
-		<p>Opened in 2013, GizmoLabs offers hot-desks and dedicated desks, a meeting room, kitchen, WiFi and other amenities in a friendly amosphere.</p>
-	</div>
-	</div>
-</section>
-
-
-<section class="venue-hours">
 	<div class="row">
-		<div class="column small-12 fl/ex-container">
-			<div class="card" >
-				<div class="card-divider ">
-					<h4><i class="fa fa-clock-o"></i> Hours</h4>
-				</div>
-
-				<div class="row medium-unstack card-section text-center">
-					<div class="column"> <b>Mon</b><br>9:30am - 7:00pm </div>
-					<div class="column"> <b>Tue</b><br>10:30am - 8:00pm </div>
-					<div class="column"> <b>Wed</b><br>10:30am - 8:00pm </div>
-					<div class="column"> <b>Thu</b><br>10:30am - 8:00pm </div>
-					<div class="column"> <b>Fri</b><br>9:30am - 7:00pm </div>
-					<div class="column"> <b>Sat</b><br>9:30am - 7:00pm </div>
-					<div class="column"> <b>Sun</b><br>Closed </div>
-				</div>
-
-			</div>
+		<div class="small-12 columns">
+			<input type="checkbox" name="pokemon" value="closed" id="bizClosed"><label for="bizClosed">Business Closed</label>
 		</div>
 	</div>
-	
-</section>
 
-
-
-
-
-
-
-<section class="profile-services-list">
 	<div class="row">
-		<div class="column small-12 medium-6">
-			<div class="card" >
-				<div class="card-divider ">
-					<h4><i class="fa fa-wrench"></i> Products / Services</h4>
-				</div>
-				<div class="card-section text-left">
-
-				<div class="row">
-					<div class="large-12 columns">
-						<ul class="menu ex/panded align-left">
-							<li><a href="/city-page.html">Phone Repair</a></li>
-							<li><a href="/city-page.html">Phone Unlocking</a></li>
-							<li><a href="/city-page.html">Screen Repair</a></li>
-							<li><a href="/city-page.html">Apple Certified</a></li>
-						</ul>
-					</div>
-				</div>
-
-				</div>
-			</div>
+		<div class="small-12 columns">
+			<input type="checkbox" name="pokemon" value="hoursWrong" id="hoursWrong"><label for="hoursWrong">Hours Wrong</label>
 		</div>
-
-
-		<div class="column small-12 medium-6 ">
-			<div class="card" >
-				<div class="card-divider ">
-					<h4><i class="fa fa-star"></i> Brands</h4>
-				</div>
-				<div class="card-section text-left">
-
-				<div class="row">
-					<div class="large-12 columns">
-						<ul class="menu ex/panded align-left">
-				<li><a href="/city-page.html">Nokia</a></li>
-				<li><a href="/city-page.html">AMD</a></li>
-				<li><a href="/city-page.html">Google</a></li>
-				<li><a href="/city-page.html">Apple</a></li>
-						</ul>
-					</div>
-				</div>
-
-				</div>
-			</div>
-		</div>
-
-	</div>	
-</section>
-
-
-
-<section class="profile-services-list">
-	<div class="row">
-
-		<div class="column small-12 medium-6">
-			<div class="card" >
-				<div class="card-divider ">
-					<h4><i class="fa fa-telegram"></i> Contact iFixIt Repairs</h4>
-				</div>
-				<div class="card-section text-left">
-				<ul class="no-bullet">
-					<li>Phone: (416) 123-1234</li>
-					<li>Toll-Free: 1-800-123-1234</li>
-					
-
-					<li>  Website: <a href="#">www.IFixer.com</a></li>
-					<li>  Twitter: <a href="#">@iFixer</a></li>
-
-				</ul>
-
-				</div>
-			</div>
-		</div>
-
-
-		<div class="column small-12 medium-6">
-			<div class="card" >
-				<div class="card-divider ">
-					<h4><i class="fa fa-language"></i> Languages Spoken</h4>
-				</div>
-				<div class="card-section text-left">
-
-				<div class="row">
-					<div class="large-12 columns">
-						<ul class="menu ex/panded align-left">
-				<li><a href="/city-page.html">English</a></li>
-				<li><a href="/city-page.html">Korean</a></li>
-						</ul>
-					</div>
-				</div>
-
-				</div>
-			</div>
-		</div>
-	</div>	
-</section>
-
-
-
-
-
-
-
-<section class="nearby">
-	<div class="row column">
-		<h3>What's Nearby</h3>
 	</div>
-</section>
 
--->
+	<div class="row">
+		<div class="small-12 columns">
+			<textarea required pattern="alpha_numeric" placeholder="Hours..."></textarea>
+		</div>
+		<p class="help-text" id="exampleHelpText2">Please Enter correct hours if you know them.</p>
+	</div>
+
+	<div class="row">
+		<div class="small-12 columns">
+			<input type="checkbox" name="pokemon" value="addressWrong" id="addressWrong"><label for="addressWrong">Address Wrong</label>
+		</div>
+	</div>
+	<div class="row">
+		<div class="small-12 columns">
+			<textarea required pattern="alpha_numeric" placeholder="Hours..."></textarea>
+		</div>
+		<p class="help-text" id="exampleHelpText2">Please Enter correct address if you know it.</p>
+	</div>
+
+	<div class="row">
+		<div class="small-12 columns">
+			<input type="checkbox" name="pokemon" value="contactWrong" id="contactWrong"><label for="contactWrong">Contact Information Wrong</label>
+		</div>
+	</div>
+	<div class="row">
+		<div class="small-12 columns">
+			<textarea required pattern="alpha_numeric" placeholder="Hours..."></textarea>
+		</div>
+		<p class="help-text" id="exampleHelpText2">Please Enter correct contact info. if you know it.</p>
+	</div>
+
+
+	<div class="row">
+		<div class="small-12 columns">
+			<input type="checkbox" name="pokemon" value="otherWrong" id="otherWrong"><label for="otherWrong">Other</label>
+		</div>
+	</div>
+	<div class="row">
+		<div class="small-12 columns">
+			<textarea required pattern="alpha_numeric" rows="5" placeholder="Please enter a description of problem"></textarea>
+		</div>
+
+	</div>
+
+	<div class="row">
+		<fieldset class="large-6 columns">
+			<button class="button" type="submit" value="Submit">Submit</button>
+		</fieldset>
+		<fieldset class="large-6 columns">
+			<button class="button" type="reset" value="Reset">Reset</button>
+		</fieldset>
+	</div>
+</form>
+</div>
 
 
 <!-- footer -->
 {{> findphonefixer-footer}}
+
+

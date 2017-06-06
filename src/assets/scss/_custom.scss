@@ -153,7 +153,7 @@ a {
 	}
 
 	.breadcrumbs {
-		margin: 0; 
+		margin: 1rem auto 0;
 		padding: 0;
 	}	
 }
@@ -169,6 +169,12 @@ a {
 	outline: 1px solid lighten($brandGrey, 50%);
 }
 
+.profile-map {
+	p {
+		// line-height: 1.6;
+	}
+}
+
 
 /* try to line up both title and address - needs work */
 /*
@@ -179,6 +185,11 @@ h5.address {
 }
 */
 
+.blog-card {
+	a {
+		font-weight: bold;
+	}
+}
 
 
 
@@ -234,7 +245,15 @@ h5.address {
 }
 
 /* *** Site-wide *** */
-footer .menu { flex-wrap: wrap;  } /* fix for marketing-site-footer */
+footer {
+	.menu {
+		flex-wrap: wrap;
+	} /* fix for marketing-site-footer */
+
+	.marketing-site-footer-block > i {
+		width: 2rem;
+	}
+}
 
 /*
 * Card styles
@@ -263,6 +282,7 @@ footer .menu { flex-wrap: wrap;  } /* fix for marketing-site-footer */
 .search-results {
 	.label {
 		background-color: lighten($bandYellow, 30%); // use for other buttons?
+		// background-color: mix(white, $bandYellow, 60%); // tinting
 		color: $brandGrey;
 	}
 }
@@ -271,5 +291,10 @@ footer .menu { flex-wrap: wrap;  } /* fix for marketing-site-footer */
 	.selected {
 		background-color: $brandGrey;
 		color: $white;
+		padding: .25rem;
 	}
+}
+
+profile-picture {
+	.more-contacts { display: none}
 }

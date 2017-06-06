@@ -24,7 +24,7 @@ $(document).foundation();
 
 $(function() {
 
-	var map;
+	let map;
 
 	if ( !!document.getElementById("profile-map") ) {
 
@@ -46,6 +46,32 @@ $(function() {
 	}
 
 });
+
+/* profile functions */
+
+let cat = 'cat';
+
+/*
+// replaced with built-in Dropdown function
+if ( !!document.getElementById("profile-show-contacts") ) {
+    $('#more-contacts').hide();
+
+	var myEl = document.getElementById("profile-show-contacts");
+
+    myEl.addEventListener('click', function () {
+    	$('#more-contacts').toggle();
+    	if (myEl.innerText == 'More...') {
+            myEl.innerText = 'Less...';
+        } else {
+            myEl.innerText = 'More...';
+    	}
+    	return false;
+    })
+
+}
+*/
+
+
 
 
 /*START SLICK CAROUSEL*/
