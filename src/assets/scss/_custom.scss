@@ -255,6 +255,22 @@ footer {
 	}
 }
 
+.ablock {
+	.callout {
+		display: inline-block;
+		border: none;
+		background: none;
+		/*
+
+		//margin: 0 auto;
+		//padding: 0;
+		background: none;
+
+		//margin: 0 auto;
+		*/
+	}
+}
+
 /*
 * Card styles
 */
