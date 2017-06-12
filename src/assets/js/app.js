@@ -30,8 +30,8 @@ $(function() {
 
 	    map = new GMaps({
 		    el: '#profile-map',
-		    lat: geoCord[0],
-		    lng: geoCord[1],
+            lat: geoCord.latt,
+            lng: geoCord.long,
 		    zoomControl : true,
 		    zoomControlOpt: {
 		        style : 'SMALL',
@@ -43,13 +43,29 @@ $(function() {
 		    overviewMapControl: false
 	  });
 
+        map.addMarker({
+            lat: geoCord.latt,
+            lng: geoCord.long,
+            title: geoCord.venue_name,
+            infoWindow: {
+                content: `<b>${geoCord.venue_name}</b>
+<br>
+${geoCord.venue_address}`
+            }
+            /*
+            title: 'Lima',
+            click: function(e) {
+                alert('You clicked in this marker');
+            }
+            */
+        });
+
+
 	}
 
 });
 
 /* profile functions */
-
-let cat = 'cat';
 
 /*
 // replaced with built-in Dropdown function

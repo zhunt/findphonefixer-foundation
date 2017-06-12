@@ -257,7 +257,8 @@ footer {
 
 .ablock {
 	.callout {
-		display: inline-block;
+		//display: inline-block;
+		//display: block;
 		border: none;
 		background: none;
 		/*
@@ -300,6 +301,15 @@ footer {
 		background-color: lighten($bandYellow, 30%); // use for other buttons?
 		// background-color: mix(white, $bandYellow, 60%); // tinting
 		color: $brandGrey;
+	}
+}
+
+.venue-description {
+	.callout {
+		border: none;
+		border-top: 1px solid mix( white, $brandGrey, 80%);
+		border-bottom: 1px solid mix( white, $brandGrey, 80%);
+		background-color: mix( white, $brandGrey, 95%);
 	}
 }
 
