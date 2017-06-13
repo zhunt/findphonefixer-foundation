@@ -255,20 +255,13 @@ footer {
 	}
 }
 
+// For advertising blocks
 .ablock {
 	.callout {
-		//display: inline-block;
-		//display: block;
 		border: none;
-		background: none;
-		/*
-
-		//margin: 0 auto;
-		//padding: 0;
-		background: none;
-
-		//margin: 0 auto;
-		*/
+		background-color: mix( white, $brandGrey, 90%);
+		padding: 0;
+		//margin: 1rem auto;
 	}
 }
 
@@ -287,11 +280,6 @@ footer {
 		line-height: 1;
 		margin-top: 0;
 	}
-
-	h1 {
-		//line-height: 1;
-	}
-
 }
 
 
@@ -307,9 +295,9 @@ footer {
 .venue-description {
 	.callout {
 		border: none;
-		border-top: 1px solid mix( white, $brandGrey, 80%);
-		border-bottom: 1px solid mix( white, $brandGrey, 80%);
-		background-color: mix( white, $brandGrey, 95%);
+		border-top: 1px solid mix( white, $brandGrey, 85%);
+		border-bottom: 1px solid mix( white, $brandGrey, 85%);
+		background-color: mix( white, $brandGrey, 90%);
 	}
 }
 
@@ -323,4 +311,9 @@ footer {
 
 profile-picture {
 	.more-contacts { display: none}
+}
+
+.nearby-venues {
+	//h5 { display: inline-block}
+	em { white-space: nowrap; }
 }
