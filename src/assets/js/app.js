@@ -22,48 +22,45 @@ $(document).foundation();
       });
 
 
-$(function() {
+  $(function() {
 
-	let map;
+  	let map;
 
-	if ( !!document.getElementById("profile-map") ) {
+  	if ( !!document.getElementById("profile-map") ) {
 
-	    map = new GMaps({
-		    el: '#profile-map',
-            lat: geoCord.latt,
-            lng: geoCord.long,
-		    zoomControl : true,
-		    zoomControlOpt: {
-		        style : 'SMALL',
-		        position: 'TOP_LEFT'
-		    },
-		    panControl : false,
-		    streetViewControl : false,
-		    mapTypeControl: false,
-		    overviewMapControl: false
-	  });
+  	    map = new GMaps({
+  		    el: '#profile-map',
+              lat: geoCord.latt,
+              lng: geoCord.long,
+  		    zoomControl : true,
+  		    zoomControlOpt: {
+  		        style : 'SMALL',
+  		        position: 'TOP_LEFT'
+  		    },
+  		    panControl : false,
+  		    streetViewControl : false,
+  		    mapTypeControl: false,
+  		    overviewMapControl: false
+  	  });
+          map.setCenter( geoCord.latt,  geoCord.long );
 
-        map.addMarker({
-            lat: geoCord.latt,
-            lng: geoCord.long,
-            title: geoCord.venue_name,
-            infoWindow: {
-                content: `<b>${geoCord.venue_name}</b>
-<br>
-${geoCord.venue_address}`
-            }
-            /*
-            title: 'Lima',
-            click: function(e) {
-                alert('You clicked in this marker');
-            }
-            */
-        });
+          map.addMarker({
+              lat: geoCord.latt,
+              lng: geoCord.long,
+              title: geoCord.venue_name,
+              infoWindow: {
+                  content: `<b>${geoCord.venue_name}</b><br>${geoCord.venue_address}`
+              }
+              /*
+              title: 'Lima',
+              click: function(e) {
+                  alert('You clicked in this marker');
+              }
+              */
+          });
+  	}
 
-
-	}
-
-});
+  });
 
 /* profile functions */
 
@@ -86,6 +83,11 @@ if ( !!document.getElementById("profile-show-contacts") ) {
 
 }
 */
+
+    $(document).ready(function() {
+        let currentDay = `day_${(new Date).getDay()}`;
+        $(`.venue-hours p.${currentDay}`).addClass('selected');
+    });
 
 
 

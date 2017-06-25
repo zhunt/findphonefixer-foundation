@@ -176,15 +176,6 @@ a {
 }
 
 
-/* try to line up both title and address - needs work */
-/*
-h5.address {
-	@include breakpoint(medium) {
-		padding-top: 1.5rem;
-	}
-}
-*/
-
 .blog-card {
 	a {
 		font-weight: bold;
@@ -285,14 +276,24 @@ footer {
 
 .venue-description,
 .search-results {
+	width: 100%; // new
+
 	.label {
 		background-color: lighten($bandYellow, 30%); // use for other buttons?
 		// background-color: mix(white, $bandYellow, 60%); // tinting
 		color: $brandGrey;
+
 	}
 }
 
 .venue-description {
+	.mall-stores {
+		a { white-space: nowrap; }
+
+
+	}
+	
+
 	.callout {
 		border: none;
 		border-top: 1px solid mix( white, $brandGrey, 85%);
@@ -314,8 +315,11 @@ profile-picture {
 }
 
 .nearby-venues {
-	//h5 { display: inline-block}
 	em { white-space: nowrap; }
 }
 
 .neat-article-container { margin-top: 0 !important;}
+
+/*
+
+*/

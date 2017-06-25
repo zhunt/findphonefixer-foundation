@@ -14,6 +14,8 @@ UNCSS_OPTIONS:
   ignore:
     - !!js/regexp .foundation-mq
     - !!js/regexp ^\.is-.*
+    - !!js/regexp ^\li.is-.*
+    - !!js/regexp ^\.dropdown-pane.is-open
 
 # Gulp will reference these paths when it copies files
 PATHS:
