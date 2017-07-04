@@ -282,7 +282,7 @@ footer {
 		background-color: lighten($bandYellow, 30%); // use for other buttons?
 		// background-color: mix(white, $bandYellow, 60%); // tinting
 		color: $brandGrey;
-
+		cursor: auto;
 	}
 }
 
@@ -321,5 +321,118 @@ profile-picture {
 .neat-article-container { margin-top: 0 !important;}
 
 /*
-
+Algolia search styles
 */
+.aa-input-container {
+    display: inline-block;
+    position: relative;
+}
+.aa-input-search {
+    /* width: 300px; */
+    
+    border: 1px solid rgba(228, 228, 228, 0.6);
+    padding: 12px 28px 12px 12px;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+.aa-input-search::-webkit-search-decoration,
+.aa-input-search::-webkit-search-cancel-button,
+.aa-input-search::-webkit-search-results-button,
+.aa-input-search::-webkit-search-results-decoration {
+    display: none;
+}
+
+.aa-dropdown-menu {
+    background-color: #fff;
+    border: 1px solid rgba(228, 228, 228, 0.6);
+    min-width: 300px;
+    width: 100%;
+    
+    margin-top: 10px;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+.aa-dropdown-menu { 
+	p {
+		color: mix( white, $brandGrey, 50%);
+		b { color: $black }
+
+	}
+
+
+}
+
+.aa-suggestion {
+    padding: 12px;
+    cursor: pointer;
+}
+.aa-suggestion + .aa-suggestion {
+    border-top: 1px solid rgba(228, 228, 228, 0.6);
+}
+.algolia-autocomplete {
+    width: 100%;
+}
+.aa-suggestion:hover,
+.aa-suggestion.aa-cursor {
+    background-color: rgba(241, 241, 241, 0.35);
+}
+
+
+
+
+
+/*
+Admin changes
+*/
+
+.admin {
+
+	a:hover { text-decoration: underline;}
+
+	select { height: auto;}
+
+	fieldset legend {
+		border-bottom: 2px solid #2196f3;
+		width: 100%;
+		line-height: 2rem;
+	}
+
+	legend { color: #2196f3 }
+
+	button { cursor: auto }
+
+	input[type="text"], textarea {
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		border-radius: 0;
+		background-color: #fff;
+		border-style: solid;
+		border-width: 1px;
+		border-color: #ccc;
+		box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+		color: rgba(0, 0, 0, 0.75);
+		display: block;
+		font-family: inherit;
+		font-size: 0.875rem;
+		height: 2.3125rem;
+		margin: 0 0 1rem 0;
+		padding: 0.5rem;
+		width: 100%;
+	}
+
+	.date select, .time select, .datetime select {
+		display: inline;
+		width: auto;
+		margin-right: 10px;
+	}
+
+	.form button[type="submit"] {
+		float: right;
+		text-transform: uppercase;
+		box-shadow: none;
+	}
+
+}
